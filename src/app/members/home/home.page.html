@@ -1,0 +1,21 @@
+<ion-split-pane contentId="menu-content" when="md" [disabled]="false">
+  <ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>onSplitPaneVisible</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-menu-toggle autoHide="false">
+      <ion-item routerDirection="menu-content" routerLink="/home/pagina1">
+        <ion-label>pagina 1</ion-label>
+      </ion-item>
+
+      <ion-item routerDirection="root" routerLink="/home/dashboard">
+        <ion-label>dashboard</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="menu-content" redirectTo="dashboard"></ion-router-outlet>
+</ion-split-pane>
